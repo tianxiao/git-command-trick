@@ -1,0 +1,5 @@
+xargs will do what you want:
+git ls-files | xargs cat | wc -l
+
+But with more information and probably better, you can do:
+git ls-files | xargs wc -l
